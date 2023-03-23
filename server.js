@@ -14,6 +14,9 @@ const server = http.createServer((req, res)=>{
         case '/':
             path += 'index.html';
             break;
+        case '/home':
+            path += 'index.html';
+            break;
         case '/about':
             path += 'about.html';
             break;
