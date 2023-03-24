@@ -1,8 +1,24 @@
 const http = require('http');
 const fs = require('fs');
+const _ = require("lodash");
 
 const server = http.createServer((req, res)=>{
-    console.log(req.url, req.method);
+    //console.log(req.url, req.method);
+
+    //loadash
+
+    const num = _.random(0, 20);
+    console.log(num);
+
+    //will call function only once 
+    const greet = _.once(() => {
+        console.log('hello');
+    });
+     
+    greet();
+    greet();
+    
+
     //set header content type
      res.setHeader('Content-Type','text/html');
     // res.write('<p>Hello on landing page</p>');
