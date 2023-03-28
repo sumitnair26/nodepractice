@@ -1,22 +1,7 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practicing Node JS | <%= title %></title>
-</head>
+    <%- include('./partials/head.ejs') %>
 <body>
-    <nav>
-        <div class="site-title">
-            <a href="/"><h1>Node JS EJS</h1></a>
-            <p>A node JS Site</p>
-        </div>
-        <ul>
-            <li><a href="/">Blogs</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/blogs/create">New Blog</a></li>
-        </ul>
-    </nav>
+    <%- include('./partials/nav.ejs') %>
     <div class="about content">
         <h2>About us</h2>
         <p>
@@ -26,5 +11,6 @@
         <p>
             Proident veniam culpa qui proident anim. Pariatur sint ad minim mollit cupidatat nostrud veniam do excepteur nostrud voluptate. Enim magna aliquip sit consectetur cupidatat officia. Nisi elit duis eiusmod ea tempor dolore exercitation elit. Proident esse irure proident aliqua esse proident laborum. Cupidatat eu esse ad excepteur ea Lorem in cillum fugiat anim. Qui dolor proident irure culpa anim. Ad non ut ullamco enim consequat Lorem aliqua nulla irure ipsum culpa ut. Est aliquip magna aliquip sit commodo eu excepteur. Est ex consequat est ex proident ullamco proident. Anim esse velit id nostrud duis ullamco laborum anim pariatur.</p>       
     </div>
+    <%- include('./partials/footer.ejs') %>
 </body>
 </html>
